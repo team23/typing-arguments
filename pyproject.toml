@@ -13,6 +13,11 @@ dependencies = []
 [project.urls]
 Repository = "https://github.com/team23/typing-arguments"
 
+[project.optional-dependencies]
+pydantic = [
+    "pydantic>=2.0.0,<3.0.0",
+]
+
 [dependency-groups]
 dev = [
     "pydantic>=2.10.1",

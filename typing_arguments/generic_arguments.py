@@ -208,7 +208,7 @@ class GenericArgumentsMixin:
         )
 
 
-class typing_arg:  # noqa
+class typing_arg:
     __slots__ = ("type_argument",)
 
     def __init__(self, type_argument: TypeVar, /) -> None:

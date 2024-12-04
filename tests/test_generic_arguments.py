@@ -35,13 +35,13 @@ def test_plain_generic():
 def test_plain_generic_raises_exception_if_not_typed():
     assert PlainGeneric.__typing_arguments__ == {}
     with pytest.raises(TypeError):
-        PlainGeneric.t1
+        PlainGeneric.t1  # noqa: B018
     with pytest.raises(TypeError):
-        PlainGeneric.t2
+        PlainGeneric.t2  # noqa: B018
     with pytest.raises(TypeError):
-        PlainGeneric().t1
+        PlainGeneric().t1  # noqa: B018
     with pytest.raises(TypeError):
-        PlainGeneric().t2
+        PlainGeneric().t2  # noqa: B018
 
 
 def test_plain_generic_raises_exception_if_base_class_is_not_generic():
@@ -83,7 +83,7 @@ def test_plain_generic_raises_exception_if_using_typing_arg_on_non_mixin_class()
         t1 = typing_arg(T1)
 
     with pytest.raises(TypeError):
-        Something[str].t1
+        Something[str].t1  # noqa: B018
 
 
 def test_plain_generic_child():

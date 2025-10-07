@@ -18,13 +18,13 @@ pydantic = [
 
 [dependency-groups]
 dev = [
-    "pydantic>=2.10.1",
-    "pyright>=1.1.389",
-    "pytest>=8.3.3",
-    "pytest-cov>=6.0.0",
-    "ruff>=0.8.0",
-    "tomlkit>=0.13.2",
-    "tox>=4.23.2",
+    "pydantic>=2.11.10",
+    "pyright>=v1.1.406",
+    "pytest>=8.4.2",
+    "pytest-cov>=7.0.0",
+    "ruff>=0.13.3",
+    "tomlkit>=0.13.3",
+    "tox>=4.30.3",
 ]
 
 [tool.ruff]

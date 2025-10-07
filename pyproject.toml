@@ -5,6 +5,7 @@ description = "Store references of your typing arguments to be available at runt
 readme = "README.md"
 authors = [{ name = "TEAM23 GmbH", email = "info@team23.de" }]
 license = "MIT"
+license-files = ["LICENSE"]
 requires-python = ">=3.10"
 dependencies = []
 

@@ -3,10 +3,8 @@ name = "typing-arguments"
 version = "0.1.1"
 description = "Store references of your typing arguments to be available at runtime."
 readme = "README.md"
-authors = [
-    {name = "TEAM23 GmbH", email = "info@team23.de"},
-]
-license = {file = "LICENSE"}
+authors = [{ name = "TEAM23 GmbH", email = "info@team23.de" }]
+license = "MIT"
 requires-python = ">=3.10"
 dependencies = []
 
@@ -31,7 +29,7 @@ dev = [
 
 [tool.ruff]
 line-length = 115
-target-version = "py39"
+target-version = "py310"
 output-format = "grouped"
 
 [tool.ruff.lint]
@@ -44,10 +42,9 @@ ignore = ["A001","A002","A003","ANN401","C901","N8","B008","F405","F821"]
 "test_*.py" = ["S101","ANN","F401"]
 
 [build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
+requires = ["uv_build>=0.8.22,<0.9.0"]
+build-backend = "uv_build"
 
-[tool.hatch.build]
-include = [
-    "typing_arguments",
-]
+[tool.uv.build-backend]
+module-name = "typing_arguments"
+module-root = ""

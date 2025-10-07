@@ -36,11 +36,9 @@ pyright *args: (uv "run" "pyright" "typing_arguments" args)
 
 lint: ruff pyright
 
-publish: (uv "publish" "--build")
-
-release version: (uv "run" "pkg-version.py" version)
+release version: (uv "version" version)
     git add pyproject.toml
-    git commit -m "release: 🔖 v$(uv run --quiet pkg-version.py)" --no-verify
-    git tag "v$(uv run --quiet pkg-version.py)"
+    git commit -m "release: 🔖 v$(uv version --short)" --no-verify
+    git tag "v$(uv version --short)"
     git push
     git push --tags

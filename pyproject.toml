@@ -23,7 +23,7 @@ dev = [
     "pyright>=v1.1.406",
     "pytest>=8.4.2",
     "pytest-cov>=7.0.0",
-    "ruff>=0.13.3",
+    "ruff>=0.14.0",
     "tomlkit>=0.13.3",
     "tox>=4.30.3",
 ]
